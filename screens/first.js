@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
 
-const RootScreen = props => {
+const First = props => {
     return (
         <View style={styles.screen}>
             <Text>
-                This is the Root Screen
+                This is the First Screen
       </Text>
             
             <Button title="Go Back" onPress={() => { props.navigation.pop() }} />
@@ -18,8 +18,9 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor:"lightcyan"
     }
 });
 
-export default RootScreen;
+export default First;
